@@ -8,7 +8,7 @@ const TaskList = ({ onPressCallBack, taskList }) => (
   <View>
     {taskList.map(task => (
       <ListItem
-        onPress={() => onPressCallBack(task.content)}
+        onPress={() => onPressCallBack(task)}
         Component={TouchableScale}
         activeScale={0.97} //
         linearGradientProps={{
